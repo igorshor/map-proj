@@ -1,0 +1,36 @@
+.logs{
+    width: 100%;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+
+    .header{
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .controls{
+        margin: 20px 0 10px 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .start, .end{
+            width: 45%;
+        }
+    }
+
+    .log-list{
+        display: flex;
+        flex-direction: column;
+
+        .log{
+            display: flex;
+
+            .name{
+                flex: 1
+            }
+        }
+    }
+    
+}

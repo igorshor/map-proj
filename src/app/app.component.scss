@@ -1,0 +1,15 @@
+.app-wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    .log{
+        width: 300px;
+        flex-shrink: 0;
+        padding: 25px 15px 0 15px;
+    }
+
+    .map{
+        flex: 1;
+    }
+}

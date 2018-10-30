@@ -1,0 +1,10 @@
+<div class="map">
+  <div *ngFor="let ad of displaysEvents" class="map-item" [style.bottom]="optimizeCoordinate(ad.coordinates.y, false) + 'px'"
+    [style.left]="optimizeCoordinate(ad.coordinates.x) + 'px'">
+    <img *ngIf="isImage(ad); else video" src="{{ad.creative.url}}">
+    <ng-template #video>
+      <video src="{{ad.creative.url}}" [autoplay]="true" [muted]="true"></video>
+    </ng-template>
+  </div>
+  <img #map src="../../assets/got-map.png" alt="map">
+</div>

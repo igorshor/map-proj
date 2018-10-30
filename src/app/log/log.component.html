@@ -1,0 +1,14 @@
+<div class="logs">
+  <div class="header">
+    Ads
+  </div>
+  <div class="controls">
+    <input type="text" class="start" [(ngModel)]="start" (ngModelChange)="filter()">
+    <input type="text" class="end" [(ngModel)]="end" (ngModelChange)="filter()">
+  </div>
+  <div class="log-list">
+    <div class="log" *ngFor="let log of logs">
+      <app-log-item [item]="log"></app-log-item>
+    </div>
+  </div>
+</div>

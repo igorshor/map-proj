@@ -1,0 +1,15 @@
+<div class="log-item">
+  <div class="time">
+    {{item.time | date:'HH:mm:ss'}}
+  </div>
+    <img *ngIf="isImage; else movie" src="../../assets/image.png" alt="type">
+    <ng-template #movie>
+        <img src="../../assets/movie.png" alt="type">
+    </ng-template>
+    <span>
+        {{item.creative.name}}
+    </span>
+    <a href="{{item.creative.url}}" target=”_blank”>
+      <img src="../../assets/link.png" alt="">
+    </a>
+</div>
